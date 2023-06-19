@@ -4,8 +4,8 @@
     "ReleaseDate": "19/06/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-    "Beta": "https://github.com/proracingsimulators/ProRacingSoftware/raw/main/beta/PRS.zip",
-    "Release": "",
+    "BetaUrl": "https://github.com/proracingsimulators/ProRacingSoftware/raw/main/beta/PRS.zip",
+    "ReleaseUrl": "",
     "ManifestVersion": "v1",
     "Changelog": [
         {
