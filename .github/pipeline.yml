@@ -1,0 +1,89 @@
+name: pipeline
+
+on:
+  push:
+    branches: 
+      - release
+      - master
+      - main
+
+jobs:
+  delivery:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set pre-release envs
+        if: ${{ github.ref == 'refs/heads/release' }}
+        run: |
+          echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
+          echo "TAG_KIND=-pre" >> $GITHUB_ENV
+          echo "ARQUIVE_DIR=./beta" >> $GITHUB_ENV
+          echo "ARQUIVE_NAME=PRS-beta.zip" >> $GITHUB_ENV
+
+
+      - name: Set release envs
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          echo "RELEASE_KIND=release" >> $GITHUB_ENV
+          echo "TAG_KIND=" >> $GITHUB_ENV
+          echo "ARQUIVE_DIR=./release" >> $GITHUB_ENV
+          echo "ARQUIVE_NAME=PRS.zip" >> $GITHUB_ENV
+
+
+      - name: Archive build
+        uses: thedoctor0/zip-release@main
+        with:
+          type: 'zip'
+          directory: ${{ env.ARQUIVE_DIR }}
+          filename: ${{ env.ARQUIVE_NAME }}
+
+      - name: Get previous tag
+        id: previoustag
+        uses: WyriHaximus/github-action-get-previous-tag@v1
+        with:
+          fallback: v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get next version
+        id: semvers
+        uses: WyriHaximus/github-action-next-semvers@v1
+        with:
+          version: ${{ steps.previoustag.outputs.tag }}
+
+      - name: Create Pre Release tag
+        if: ${{ github.ref == 'refs/heads/release' }}
+        run: |
+          git tag ${{ steps.semvers.outputs.v_minor }}-alpha
+          git push origin ${{ steps.semvers.outputs.v_minor }}-alpha
+
+      - name: Pre Release
+        if: ${{ github.ref == 'refs/heads/release' }}
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: true
+          body_path: ${{ github.workspace }}/changes.md
+          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_minor }}-alpha
+          tag_name: ${{ steps.semvers.outputs.v_minor }}-alpha
+          files: |
+            ./${{ env.ARQUIVE_DIR }}/${{ env.ARQUIVE_NAME }}
+
+      - name: Create Release tag
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          git tag ${{ steps.semvers.outputs.v_patch }}
+          git push origin ${{ steps.semvers.outputs.v_patch }}
+
+      - name: Release
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: softprops/action-gh-release@v1
+        with:
+          body_path: ${{ github.workspace }}/changes.md
+          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_patch }}
+          tag_name: ${{ steps.semvers.outputs.v_patch }}
+          files: |
+            ./${{ env.ARQUIVE_DIR }}/${{ env.ARQUIVE_NAME }}
