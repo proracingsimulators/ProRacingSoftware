@@ -58,8 +58,8 @@ jobs:
       - name: Create Pre Release tag
         if: ${{ github.ref == 'refs/heads/release' }}
         run: |
-          git tag ${{ steps.semvers.outputs.v_minor }}-alpha
-          git push origin ${{ steps.semvers.outputs.v_minor }}-alpha
+          git tag ${{ steps.semvers.outputs.v_minor }}-beta
+          git push origin ${{ steps.semvers.outputs.v_minor }}-beta
 
       - name: Pre Release
         if: ${{ github.ref == 'refs/heads/release' }}
@@ -67,8 +67,8 @@ jobs:
         with:
           prerelease: true
           body_path: ${{ github.workspace }}/changes.md
-          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_minor }}-alpha
-          tag_name: ${{ steps.semvers.outputs.v_minor }}-alpha
+          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_minor }}-beta
+          tag_name: ${{ steps.semvers.outputs.v_minor }}-beta
           files: |
             ./${{ env.ARQUIVE_DIR }}/${{ env.ARQUIVE_NAME }}
 
