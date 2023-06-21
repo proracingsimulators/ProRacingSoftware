@@ -21,8 +21,8 @@ jobs:
         run: |
           echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
           echo "TAG_KIND=-pre" >> $GITHUB_ENV
-          echo "ARQUIVE_DIR=./beta" >> $GITHUB_ENV
-          echo "ARQUIVE_NAME=PRS-beta.zip" >> $GITHUB_ENV
+          echo "ARQUIVE_DIR=./" >> $GITHUB_ENV
+          echo "ARQUIVE_NAME=SetupPRS.msi" >> $GITHUB_ENV
 
 
       - name: Set release envs
@@ -30,16 +30,8 @@ jobs:
         run: |
           echo "RELEASE_KIND=release" >> $GITHUB_ENV
           echo "TAG_KIND=" >> $GITHUB_ENV
-          echo "ARQUIVE_DIR=./release" >> $GITHUB_ENV
-          echo "ARQUIVE_NAME=PRS.zip" >> $GITHUB_ENV
-
-
-      - name: Archive build
-        uses: thedoctor0/zip-release@main
-        with:
-          type: 'zip'
-          directory: ${{ env.ARQUIVE_DIR }}
-          filename: ${{ env.ARQUIVE_NAME }}
+          echo "ARQUIVE_DIR=./" >> $GITHUB_ENV
+          echo "ARQUIVE_NAME=SetupPRS.msi" >> $GITHUB_ENV
 
       - name: Get previous tag
         id: previoustag
