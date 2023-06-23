@@ -2,80 +2,64 @@ name: pipeline
 
 on:
   push:
-    branches: 
-      - release
-      - master
-      - main
-
+    branches:
+      - "develop"
+      - "release"
+      - "main"
+      
 jobs:
-  delivery:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          submodules: recursive
 
-      - name: Set pre-release envs
+      - name: Set common env
+        run: |
+          echo "RELEASE_DIRECTORY=github.workspace" >> $GITHUB_ENV
+          echo "RELEASE_CHANGELOG=changes.md" >> $GITHUB_ENV
+          echo "RELEASE_FILE=SetupPRS.msi" >> $GITHUB_ENV
+
+      - name: Set alpha env
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        run: |
+          echo "RELEASE_PRE=true" >> $GITHUB_ENV
+          echo "RELEASE_SUFFIX=alpha" >> $GITHUB_ENV
+          echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
+          
+      - name: Set beta env
         if: ${{ github.ref == 'refs/heads/release' }}
         run: |
+          echo "RELEASE_PRE=true" >> $GITHUB_ENV
+          echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
           echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
-          echo "TAG_KIND=-pre" >> $GITHUB_ENV
-          echo "ARQUIVE_DIR=./" >> $GITHUB_ENV
-          echo "ARQUIVE_NAME=SetupPRS.msi" >> $GITHUB_ENV
 
-
-      - name: Set release envs
+      - name: Set release env
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
+          echo "RELEASE_PRE=false" >> $GITHUB_ENV
+          echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
           echo "RELEASE_KIND=release" >> $GITHUB_ENV
-          echo "TAG_KIND=" >> $GITHUB_ENV
-          echo "ARQUIVE_DIR=./" >> $GITHUB_ENV
-          echo "ARQUIVE_NAME=SetupPRS.msi" >> $GITHUB_ENV
 
-      - name: Get previous tag
-        id: previoustag
-        uses: WyriHaximus/github-action-get-previous-tag@v1
-        with:
-          fallback: v1.0.0
+      - name: Create TAG
+        id: tag
+        if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
+        uses: anothrNick/github-tag-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          PRERELEASE: ${{ env.RELEASE_PRE }}
+          PRERELEASE_SUFFIX: ${{ env.RELEASE_SUFFIX }}
 
-      - name: Get next version
-        id: semvers
-        uses: WyriHaximus/github-action-next-semvers@v1
-        with:
-          version: ${{ steps.previoustag.outputs.tag }}
-
-      - name: Create Pre Release tag
-        if: ${{ github.ref == 'refs/heads/release' }}
-        run: |
-          git tag ${{ steps.semvers.outputs.v_minor }}-beta
-          git push origin ${{ steps.semvers.outputs.v_minor }}-beta
-
-      - name: Pre Release
-        if: ${{ github.ref == 'refs/heads/release' }}
+      - name: Create release
+        if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
         uses: softprops/action-gh-release@v1
         with:
-          prerelease: true
-          body_path: ${{ github.workspace }}/changes.md
-          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_minor }}-beta
-          tag_name: ${{ steps.semvers.outputs.v_minor }}-beta
+          prerelease: ${{ env.RELEASE_PRE }}
+          body_path: ${{ github.workspace }}/${{ env.RELEASE_CHANGELOG }}
+          name: ${{ env.RELEASE_KIND }} ${{ steps.tag.outputs.new_tag }}
+          tag_name: ${{ steps.tag.outputs.new_tag }}
           files: |
-            ./${{ env.ARQUIVE_DIR }}/${{ env.ARQUIVE_NAME }}
-
-      - name: Create Release tag
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: |
-          git tag ${{ steps.semvers.outputs.v_patch }}
-          git push origin ${{ steps.semvers.outputs.v_patch }}
-
-      - name: Release
-        if: ${{ github.ref == 'refs/heads/main' }}
-        uses: softprops/action-gh-release@v1
-        with:
-          body_path: ${{ github.workspace }}/changes.md
-          name: ${{ env.RELEASE_KIND }} ${{ steps.semvers.outputs.v_patch }}
-          tag_name: ${{ steps.semvers.outputs.v_patch }}
-          files: |
-            ./${{ env.ARQUIVE_DIR }}/${{ env.ARQUIVE_NAME }}
+            ./${{ env.RELEASE_DIRECTORY }}/${{ env.RELEASE_FILE }}
