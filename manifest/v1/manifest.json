@@ -1,10 +1,10 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.2.0.5",
-    "ReleaseDate": "26/07/2023",
+    "Version": "0.1.0.4",
+    "ReleaseDate": "23/06/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-    "Url": "https://github.com/proracingsimulators/ProRacingSoftware/releases/download/v0.2.0/SetupPRS.msi",
+    "Url": "https://github.com/proracingsimulators/ProRacingSoftware/releases/download/v0.1.0/SetupPRS.msi",
     "ManifestVersion": "v1",
     "Changelog": [
         {
@@ -12,17 +12,6 @@
             "ReleaseDate": "26/06/2023",
             "Changes": [
                 "Primeiro release do software"
-            ]
-        },
-        {
-            "Version": "0.2.0.5",
-            "ReleaseDate": "26/07/2023",
-            "Changes": [
-                "Adicionado mensagem ao abrir o software, caso já exista uma instancia do software em execução",
-                "Melhorias nas indicações de status do DirectDrivePRS",
-                "Melhorias na conexão do DirectDrivePRS com o ServoDrive",
-                "Adicionado log do software via arquivo (necessário privilégios de administrador)",
-                "Melhorias no arquivo de manifesto"
             ]
         }
     ]
