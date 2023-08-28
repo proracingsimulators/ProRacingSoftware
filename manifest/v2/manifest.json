@@ -1,7 +1,7 @@
 {
     "Name": "Pro Racing Software",
     "Version": "0.3.0.1",
-    "ReleaseDate": "26/07/2023",
+    "ReleaseDate": "28/08/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
     "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.3.0-beta.1/SetupPRS.msi",
