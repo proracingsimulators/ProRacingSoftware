@@ -1,11 +1,11 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.4.0.3",
-    "ReleaseDate": "15/09/2023",
+    "Version": "0.5.0.0",
+    "ReleaseDate": "16/09/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-    "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.4.0-beta.0/SetupPRS.msi",
-    "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.4.0/SetupPRS.msi",
+    "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.5.0-beta.0/SetupPRS.msi",
+    "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.5.0/SetupPRS.msi",
     "ManifestVersion": "v2",
     "Changelog": [
         {
@@ -39,6 +39,16 @@
             "Changes": [
                 "Adicionado botão de reboot na tela de status do Direct Drive",
                 "Adicionado atalho para resetar direct drive ao iniciar windows"
+            ]
+        },
+        {
+            "Version": "0.5.0.0",
+            "ReleaseDate": "16/09/2023",
+            "Changes": [
+                "Adicionado tela de hardware no DirectDrivePRS",
+                "Informações de hardware do módulo de potência de do módulo USB",
+                "Adicionado comando para calibração do encoder",
+                "Realizado melhorias na comunicação entreo o DirectDrivePRS e o módulo USB"
             ]
         }
     ]
