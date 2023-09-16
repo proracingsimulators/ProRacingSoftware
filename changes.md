@@ -1,5 +1,6 @@
 # Pro Racing Software
 
-## [0.3.0.1] - 28/08/2023
+## [0.4.0.3] - 14/09/2023
 
- - Adicionado suporte para placas DIRECT_DRIVE_PRS
+ - Adicionado botão de reboot na tela de status do Direct Drive
+ - Adicionado atalho para resetar direct drive ao iniciar windows
