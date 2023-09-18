@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.5.0.0] - 16/09/2023
+## [0.5.0.1] - 18/09/2023
 
  - Adicionado tela de hardware no DirectDrivePRS
  - Informações de hardware do módulo de potência de do módulo USB

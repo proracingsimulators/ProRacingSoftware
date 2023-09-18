@@ -1,7 +1,7 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.5.0.0",
-    "ReleaseDate": "16/09/2023",
+    "Version": "0.5.0.1",
+    "ReleaseDate": "18/09/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
     "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.5.0-beta.0/SetupPRS.msi",
@@ -42,8 +42,8 @@
             ]
         },
         {
-            "Version": "0.5.0.0",
-            "ReleaseDate": "16/09/2023",
+            "Version": "0.5.0.1",
+            "ReleaseDate": "18/09/2023",
             "Changes": [
                 "Adicionado tela de hardware no DirectDrivePRS",
                 "Informações de hardware do módulo de potência de do módulo USB",
