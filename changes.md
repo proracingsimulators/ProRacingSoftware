@@ -1,6 +1,8 @@
 # Pro Racing Software
 
-## [0.4.0.3] - 14/09/2023
+## [0.5.0.2] - 19/09/2023
 
- - Adicionado botão de reboot na tela de status do Direct Drive
- - Adicionado atalho para resetar direct drive ao iniciar windows
+ - Adicionado tela de hardware no DirectDrivePRS
+ - Informações de hardware do módulo de potência de do módulo USB
+ - Adicionado comando para calibração do encoder
+ - Realizado melhorias na comunicação entreo o DirectDrivePRS e o módulo USB
