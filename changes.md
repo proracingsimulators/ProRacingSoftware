@@ -1,8 +1,5 @@
 # Pro Racing Software
 
-## [0.5.0.2] - 19/09/2023
+## [0.6.0.0] - 22/09/2023
 
- - Adicionado tela de hardware no DirectDrivePRS
- - Informações de hardware do módulo de potência de do módulo USB
- - Adicionado comando para calibração do encoder
- - Realizado melhorias na comunicação entreo o DirectDrivePRS e o módulo USB
+ - Adicionado tela para atualização de firmware no MotionPRS
