@@ -1,10 +1,10 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.6.0.2",
-    "ReleaseDate": "25/09/2023",
+    "Version": "0.7.0.0",
+    "ReleaseDate": "28/09/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-    "Url": "https://github.com/proracingsimulators/prs_release/releases/download/v0.6.0/SetupPRS.msi",
+    "Url": "https://github.com/proracingsimulators/prs_release/releases/download/v0.7.0/SetupPRS.msi",
     "ManifestVersion": "v1",
     "Changelog": [
         {
@@ -55,6 +55,13 @@
             "ReleaseDate": "25/09/2023",
             "Changes": [
                 "Adicionado tela para atualização de firmware no MotionPRS"
+            ]
+        },
+        {
+            "Version": "0.7.0.0",
+            "ReleaseDate": "28/09/2023",
+            "Changes": [
+                "Adicionado módulo para controlar motion via joystick"
             ]
         }
     ]
