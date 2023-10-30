@@ -1,6 +1,6 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.7.0.4",
+    "Version": "0.7.0.5",
     "ReleaseDate": "29/10/2023",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
@@ -59,12 +59,13 @@
             ]
         },
         {
-            "Version": "0.7.0.4",
+            "Version": "0.7.0.5",
             "ReleaseDate": "29/10/2023",
             "Changes": [
                 "Adicionado módulo para controlar motion via joystick",
                 "Adicionado tela para configurar e salvar macros",
-                "Adicionado plugin PRS UDP"
+                "Adicionado plugin PRS UDP",
+                "Atualizado arquivos de firmware do PedalPRS para v1.3.1"
             ]
         }
     ]
