@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.7.0.7] - 30/10/2023
+## [0.7.0.8] - 31/10/2023
 
  - Adicionado módulo para controlar motion via joystick
  - Adicionado tela para configurar e salvar macros
@@ -9,3 +9,5 @@
  - Adicionado plugins F1 2018 e F1 2023
  - Reformulado plugin F1 2022
  - Adicionado parametros para ajustar taxa de amostragem da visualização do MotionPRS
+ - Corrigido bug ao remover um efeito na tela de ajustes, o motion realizava um movimento brusco na tela de testes
+ - Habilitado controle de velocidade na tela de testes
