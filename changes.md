@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.7.0.9] - 06/11/2023
+## [0.7.0.10] - 15/11/2023
 
  - Adicionado módulo para controlar motion via joystick
  - Adicionado tela para configurar e salvar macros
@@ -11,3 +11,4 @@
  - Adicionado parametros para ajustar taxa de amostragem da visualização do MotionPRS
  - Corrigido bug ao remover um efeito na tela de ajustes, o motion realizava um movimento brusco na tela de testes
  - Habilitado controle de velocidade na tela de testes
+ - Adicionado comandos para exportar, importar e enviar arquivo de configuração de hardware para o DirectDrive
