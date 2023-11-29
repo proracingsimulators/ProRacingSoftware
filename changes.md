@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.7.0.11] - 24/11/2023
+## [0.7.0.12] - 29/11/2023
 
  - Adicionado módulo para controlar motion via joystick
  - Adicionado tela para configurar e salvar macros
