@@ -1,11 +1,11 @@
 # Pro Racing Software
 
-## [0.7.0.12] - 29/11/2023
+## [0.7.0.13] - 29/11/2023
 
  - Adicionado módulo para controlar motion via joystick
  - Adicionado tela para configurar e salvar macros
  - Adicionado plugin PRS UDP
- - Atualizado arquivos de firmware do PedalPRS para v1.3.1
+ - Atualizado arquivos de firmware do PedalPRS para v2.0.0
  - Adicionado plugins F1 2018 e F1 2023
  - Reformulado plugin F1 2022
  - Adicionado parametros para ajustar taxa de amostragem da visualização do MotionPRS
