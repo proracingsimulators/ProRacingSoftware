@@ -1,7 +1,7 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.8.0.2",
-    "ReleaseDate": "23/02/2024",
+    "Version": "0.8.0.3",
+    "ReleaseDate": "27/02/2024",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
     "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.8.0-beta.0/SetupPRS.msi",
@@ -76,8 +76,8 @@
             ]
         },
         {
-            "Version": "0.8.0.2",
-            "ReleaseDate": "23/02/2024",
+            "Version": "0.8.0.3",
+            "ReleaseDate": "27/02/2024",
             "Changes":[
               "Implementado plugin Dirt Rally 2.0",
               "Implementado plugin Flight Simulator",
@@ -85,7 +85,8 @@
               "Implementado patch automático rFactor2",
               "Implementado nova API para os plugins (v2)",
               "Adicionado suporte para placa HHHH-EFAH no PedalPRS",
-              "Corrigido bug no PedalPRS em que a task de comunicação continuava em execução após o encerramento do software"
+              "Corrigido bug no PedalPRS em que a task de comunicação continuava em execução após o encerramento do software",
+              "Implementado módulo para monitoramento e configuração do freio de mão" 
             ]
         }
     ]
