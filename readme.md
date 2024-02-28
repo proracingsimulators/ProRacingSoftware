@@ -17,6 +17,7 @@ Repositório para gerenciar os release do software Pro Racing Software.
 - Atualizar/criar registro de alterações no manifest.json
 - Atualizar o Registro de Alterações no changelog.md
 - Atualizar data de lançamento no changelog.md
+- Salvar alterações
 - Compilar Solução versões Debug e Release
 - Commit no repositório prs_release e enviar
 - Commit e pull request no repositório prs_app para a branch develop
