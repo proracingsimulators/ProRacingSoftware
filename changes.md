@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.8.0.7] - 18/03/2024
+## [0.8.0.8] - 19/03/2024
 
  - Implementado plugin Dirt Rally 2.0
  - Implementado plugin Flight Simulator
@@ -12,3 +12,4 @@
  - Implementado módulo para monitoramento e configuração do freio de mão
  - Correções no gerenciamento de memória de alguns módulos
  - Corrigido BUG ao clicar em Restart USB no DirectDrivePRS com o dispositivo desconectado
+ - Adicionado botão "Opções Avançadas" na tela inicial
