@@ -17,7 +17,7 @@ Repositório para gerenciar os release do software Pro Racing Software.
 - Atualizar o Registro de Alterações no changelog.md
 - Atualizar data de lançamento no changelog.md
 - Salvar alterações
-- Compilar Solução versões Debug e Release
+- Compilar Solução versão Release
 - Desinstalar versão atual
 - Baixar instalador do site do PRS e instalar
 - Instalar por cima a versão nova e testar o acesso as telas
