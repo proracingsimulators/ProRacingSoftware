@@ -1,6 +1,6 @@
 {
     "Name": "Pro Racing Software",
-    "Version": "0.8.0.8",
+    "Version": "0.8.0.9",
     "ReleaseDate": "30/04/2024",
     "Author": "Pro Racing Simulators",
     "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "Version": "0.8.0.8",
+            "Version": "0.8.0.9",
             "ReleaseDate": "30/04/2024",
           "Changes": [
             "Implementado plugin Dirt Rally 2.0",

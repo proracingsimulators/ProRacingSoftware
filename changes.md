@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.8.0.8] - 30/04/2024
+## [0.8.0.9] - 30/04/2024
 
  - Implementado plugin Dirt Rally 2.0
  - Implementado plugin Flight Simulator
