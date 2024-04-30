@@ -34,7 +34,7 @@ jobs:
           echo "RELEASE_PRE=true" >> $GITHUB_ENV
           echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
           echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
-          echo "RELEASE_FILE=Beta/SetupPRS.msi" >> $GITHUB_ENV
+          echo "RELEASE_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
 
       - name: Set release env
         if: ${{ github.ref == 'refs/heads/main' }}
