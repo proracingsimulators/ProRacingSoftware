@@ -20,21 +20,21 @@ jobs:
       if: ${{ github.ref == 'refs/heads/develop' }}
       run: |
         echo "RELEASE_PRE=true" >> $GITHUB_ENV
-        echo "RELEASE_SUFFIX=alpha" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-alpha" >> $GITHUB_ENV
         echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
-        echo "RELEASE_FILE=Beta/SetupPRS.msi" >> $GITHUB_ENV
+        echo "RELEASE_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
     - name: Set beta env
       if: ${{ github.ref == 'refs/heads/release' }}
       run: |
         echo "RELEASE_PRE=true" >> $GITHUB_ENV
-        echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-beta" >> $GITHUB_ENV
         echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
         echo "RELEASE_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
     - name: Set release env
       if: ${{ github.ref == 'refs/heads/main' }}
       run: |
         echo "RELEASE_PRE=false" >> $GITHUB_ENV
-        echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-beta" >> $GITHUB_ENV
         echo "RELEASE_KIND=release" >> $GITHUB_ENV
         echo "RELEASE_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
     - name: Create TAG
