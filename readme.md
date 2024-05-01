@@ -24,3 +24,4 @@ Repositório para gerenciar os release do software Pro Racing Software.
 - Commit no repositório prs_release e enviar
 - Commit e pull request no repositório prs_app para a branch develop
 - No prs_app mudar para a branch develop, sincronizar, e deletar a branch mesclada
+
