@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8887.31493",
-  "ReleaseDate": "01/05/2024",
+  "Version": "0.9.8888.27458",
+  "ReleaseDate": "02/05/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8887.31493-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8887.31493/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8888.27458-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8888.27458/SetupPRS.msi",
   "ManifestVersion": "v2",
   "Changelog": [
     {
@@ -95,11 +95,13 @@
       ]
     },
     {
-      "Version": "0.9.8887.31493",
-      "ReleaseDate": "01/05/2024",
+      "Version": "0.9.8888.27458",
+      "ReleaseDate": "02/05/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
-        "Modificado esquema de versionamento dos módulos da aplicação"
+        "Modificado esquema de versionamento dos módulos da aplicação",
+        "Removido patch do Flight Simulator",
+        "Defindo limite mínimo para sensibilidade do batente - DirectDrive"
       ]
     }
   ]
