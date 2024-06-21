@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8921.28143",
-  "ReleaseDate": "04/06/2024",
+  "Version": "0.9.8938.18894",
+  "ReleaseDate": "21/06/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8921.28143-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8921.28143/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8938.18894-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8938.18894/SetupPRS.msi",
   "ManifestVersion": "v2",
   "Changelog": [
     {
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "Version": "0.9.8921.28143",
-      "ReleaseDate": "04/06/2024",
+      "Version": "0.9.8938.18894",
+      "ReleaseDate": "21/06/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
         "Modificado esquema de versionamento dos módulos da aplicação",
@@ -105,7 +105,7 @@
         "Adicionado logs de funcionamento no PedalPRS",
         "Adicionado logs de funcionamento das telas",
         "Implementado Sistema de vibração - Shaker",
-        "Modificado plugins IRacing, Automobilista2, F1 2018, F1 2022 e F1 2023 para compatibilidade com Shaker"
+        "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker"
       ]
     }
   ]
