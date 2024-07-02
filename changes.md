@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.9.8949.14708] 02/07/2024
+## [0.9.8949.15511] 02/07/2024
 
  - Modificado esquema de versionamento da aplicação
  - Modificado esquema de versionamento dos módulos da aplicação
