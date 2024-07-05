@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8950.19368",
-  "ReleaseDate": "03/07/2024",
+  "Version": "0.9.8952.13974",
+  "ReleaseDate": "05/07/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8950.19368-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8950.19368/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8952.13974-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8952.13974/SetupPRS.msi",
   "ManifestVersion": "v2",
   "Changelog": [
     {
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "Version": "0.9.8950.19368",
-      "ReleaseDate": "03/07/2024",
+      "Version": "0.9.8952.13974",
+      "ReleaseDate": "05/07/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
         "Modificado esquema de versionamento dos módulos da aplicação",
