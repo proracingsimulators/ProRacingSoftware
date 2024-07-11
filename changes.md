@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.9.8955.19901] 08/07/2024
+## [0.9.8958.25759] 11/07/2024
 
  - Modificado esquema de versionamento da aplicação
  - Modificado esquema de versionamento dos módulos da aplicação
@@ -11,3 +11,6 @@
  - Implementado Sistema de vibração - Shaker
  - Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker
  - Modificado motion para que o dispositivo seja inicializado na tela principal do PRS
+ - Removido maple_dfu da instalação inicial
+ - Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS
+ - Criado instalador alternativo
