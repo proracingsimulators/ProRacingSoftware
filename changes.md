@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.9.8958.25759] 11/07/2024
+## [0.9.8983.20710] 05/08/2024
 
  - Modificado esquema de versionamento da aplicação
  - Modificado esquema de versionamento dos módulos da aplicação
@@ -14,3 +14,5 @@
  - Removido maple_dfu da instalação inicial
  - Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS
  - Criado instalador alternativo
+ - Implementado  efeito TractionControlStatus (TC Status)
+ - Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker

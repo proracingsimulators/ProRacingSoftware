@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8958.25759",
-  "ReleaseDate": "11/07/2024",
+  "Version": "0.9.8983.20710",
+  "ReleaseDate": "05/08/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8958.25759-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8958.25759/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8983.20710-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8983.20710/SetupPRS.msi",
   "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
@@ -96,8 +96,8 @@
       ]
     },
     {
-      "Version": "0.9.8958.25759",
-      "ReleaseDate": "11/07/2024",
+      "Version": "0.9.8983.20710",
+      "ReleaseDate": "05/08/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
         "Modificado esquema de versionamento dos módulos da aplicação",
@@ -110,7 +110,9 @@
         "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
         "Removido maple_dfu da instalação inicial",
         "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
-        "Criado instalador alternativo"
+        "Criado instalador alternativo",
+        "Implementado  efeito TractionControlStatus (TC Status)",
+        "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
       ]
     }
   ]
