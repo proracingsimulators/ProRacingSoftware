@@ -1,11 +1,12 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8913.31577",
-  "ReleaseDate": "27/05/2024",
+  "Version": "0.9.8958.25759",
+  "ReleaseDate": "11/07/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8913.31577-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8913.31577/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8958.25759-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8958.25759/SetupPRS.msi",
+  "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
     {
@@ -95,8 +96,8 @@
       ]
     },
     {
-      "Version": "0.9.8913.31577",
-      "ReleaseDate": "27/05/2024",
+      "Version": "0.9.8958.25759",
+      "ReleaseDate": "11/07/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
         "Modificado esquema de versionamento dos módulos da aplicação",
@@ -105,8 +106,11 @@
         "Adicionado logs de funcionamento no PedalPRS",
         "Adicionado logs de funcionamento das telas",
         "Implementado Sistema de vibração - Shaker",
-        "Modificado plugin IRacing (v2) para funcionamento simultâneo do Motion e Shaker",
-        "Modificado plugin Automobilista2 (v2) para funcionamento simultâneo do Motion e Shaker"
+        "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker",
+        "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
+        "Removido maple_dfu da instalação inicial",
+        "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
+        "Criado instalador alternativo"
       ]
     }
   ]
