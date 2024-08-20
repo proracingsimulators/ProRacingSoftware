@@ -1,66 +1,61 @@
 name: pipeline
-
 on:
   push:
     branches:
-      - "develop"
-      - "release"
-      - "main"
-      
+    - "develop"
+    - "release"
+    - "main"
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive
-
-      - name: Set common env
-        run: |
-          echo "RELEASE_CHANGELOG=changes.md" >> $GITHUB_ENV
-
-      - name: Set alpha env
-        if: ${{ github.ref == 'refs/heads/develop' }}
-        run: |
-          echo "RELEASE_PRE=true" >> $GITHUB_ENV
-          echo "RELEASE_SUFFIX=alpha" >> $GITHUB_ENV
-          echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
-          echo "RELEASE_FILE=Beta/SetupPRS.msi" >> $GITHUB_ENV
-          
-      - name: Set beta env
-        if: ${{ github.ref == 'refs/heads/release' }}
-        run: |
-          echo "RELEASE_PRE=true" >> $GITHUB_ENV
-          echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
-          echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
-          echo "RELEASE_FILE=Beta/SetupPRS.msi" >> $GITHUB_ENV
-
-      - name: Set release env
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: |
-          echo "RELEASE_PRE=false" >> $GITHUB_ENV
-          echo "RELEASE_SUFFIX=beta" >> $GITHUB_ENV
-          echo "RELEASE_KIND=release" >> $GITHUB_ENV
-          echo "RELEASE_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
-
-      - name: Create TAG
-        id: tag
-        if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
-        uses: anothrNick/github-tag-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: true
-          PRERELEASE: ${{ env.RELEASE_PRE }}
-          PRERELEASE_SUFFIX: ${{ env.RELEASE_SUFFIX }}
-
-      - name: Create release
-        if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
-        uses: softprops/action-gh-release@v1
-        with:
-          prerelease: ${{ env.RELEASE_PRE }}
-          body_path: ${{ github.workspace }}/${{ env.RELEASE_CHANGELOG }}
-          name: ${{ env.RELEASE_KIND }} ${{ steps.tag.outputs.new_tag }}
-          tag_name: ${{ steps.tag.outputs.new_tag }}
-          files: |
-            ${{ github.workspace }}/${{ env.RELEASE_FILE }}
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Set common env
+      run: |
+        echo "RELEASE_CHANGELOG=changes.md" >> $GITHUB_ENV
+        echo "OFFLINE_INSTALLER_FILE=Stable/SetupPRS.msi" >> $GITHUB_ENV
+        echo "ONLINE_INSTALLER_FILE=Stable/SetupPrsApp.exe" >> $GITHUB_ENV
+        echo "ZIP_FILE=Stable/PRS.zip" >> $GITHUB_ENV
+    - name: Set alpha env
+      if: ${{ github.ref == 'refs/heads/develop' }}
+      run: |
+        echo "RELEASE_PRE=true" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-alpha" >> $GITHUB_ENV
+        echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
+    - name: Set beta env
+      if: ${{ github.ref == 'refs/heads/release' }}
+      run: |
+        echo "RELEASE_PRE=true" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-beta" >> $GITHUB_ENV
+        echo "RELEASE_KIND=pre-release" >> $GITHUB_ENV
+    - name: Set release env
+      if: ${{ github.ref == 'refs/heads/main' }}
+      run: |
+        echo "RELEASE_PRE=false" >> $GITHUB_ENV
+        echo "RELEASE_SUFFIX=-beta" >> $GITHUB_ENV
+        echo "RELEASE_KIND=release" >> $GITHUB_ENV
+    - name: Create TAG
+      id: tag
+      if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
+      uses: anothrNick/github-tag-action@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
+        PRERELEASE: ${{ env.RELEASE_PRE }}
+        PRERELEASE_SUFFIX: ${{ env.RELEASE_SUFFIX }}
+        CUSTOM_TAG: v0.9.8998.21447${{ env.RELEASE_SUFFIX }}
+    - name: Create release
+      if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
+      uses: softprops/action-gh-release@v1
+      with:
+        prerelease: ${{ env.RELEASE_PRE }}
+        body_path: ${{ github.workspace }}/${{ env.RELEASE_CHANGELOG }}
+        name: ${{ env.RELEASE_KIND }} ${{ steps.tag.outputs.new_tag }}
+        tag_name: ${{ steps.tag.outputs.new_tag }}
+        files: |-
+          ${{ github.workspace }}/${{ env.OFFLINE_INSTALLER_FILE }}
+          ${{ github.workspace }}/${{ env.ONLINE_INSTALLER_FILE }}
+          ${{ github.workspace }}/${{ env.ZIP_FILE }}
