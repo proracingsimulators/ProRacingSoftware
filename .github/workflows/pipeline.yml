@@ -35,7 +35,6 @@ jobs:
       if: ${{ github.ref == 'refs/heads/main' }}
       run: |
         echo "RELEASE_PRE=false" >> $GITHUB_ENV
-        echo "RELEASE_SUFFIX=-beta" >> $GITHUB_ENV
         echo "RELEASE_KIND=release" >> $GITHUB_ENV
     - name: Create TAG
       id: tag
@@ -46,7 +45,7 @@ jobs:
         WITH_V: true
         PRERELEASE: ${{ env.RELEASE_PRE }}
         PRERELEASE_SUFFIX: ${{ env.RELEASE_SUFFIX }}
-        CUSTOM_TAG: v0.9.8998.21447${{ env.RELEASE_SUFFIX }}
+        CUSTOM_TAG: v0.10.9005.31365${{ env.RELEASE_SUFFIX }}
     - name: Create release
       if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
       uses: softprops/action-gh-release@v1

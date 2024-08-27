@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.9.8998.21447",
-  "ReleaseDate": "20/08/2024",
+  "Version": "0.10.9005.31365",
+  "ReleaseDate": "27/08/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8998.21447-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.9.8998.21447/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9005.31365-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9005.31365/SetupPRS.msi",
   "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
@@ -96,8 +96,8 @@
       ]
     },
     {
-      "Version": "0.9.8998.21447",
-      "ReleaseDate": "20/08/2024",
+      "Version": "0.9.8999.27061",
+      "ReleaseDate": "21/08/2024",
       "Changes": [
         "Modificado esquema de versionamento da aplicação",
         "Modificado esquema de versionamento dos módulos da aplicação",
@@ -113,6 +113,13 @@
         "Criado instalador alternativo",
         "Implementado  efeito TractionControlStatus (TC Status)",
         "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
+      ]
+    },
+    {
+      "Version": "0.10.9005.31365",
+      "ReleaseDate": "27/08/2024",
+      "Changes": [
+        "Criado novas opções de calibração na aplicação do shaker"
       ]
     }
   ]
