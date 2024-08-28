@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.10.9006.17965",
+  "Version": "0.10.9006.30664",
   "ReleaseDate": "28/08/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9006.17965-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9006.17965/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9006.30664-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9006.30664/SetupPRS.msi",
   "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
@@ -143,11 +143,12 @@
       ]
     },
     {
-      "Version": "0.10.9006.17965",
+      "Version": "0.10.9006.30664",
       "ReleaseDate": "28/08/2024",
       "Changes": [
         "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
-        "Criado novas opções de calibração na aplicação do shaker"
+        "Criado novas opções de calibração na aplicação do shaker",
+        "Refatorado aquisição do efeito RoadRumble nos plugins"
       ]
     }
   ]
