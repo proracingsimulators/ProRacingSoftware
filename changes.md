@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.10.9007.15061] 29/08/2024
+## [0.10.9007.15345] 29/08/2024
 
  - Adicionado tela para atualização de firmware na aplicação DirectDrivePRS
  - Criado novas opções de calibração na aplicação do shaker
