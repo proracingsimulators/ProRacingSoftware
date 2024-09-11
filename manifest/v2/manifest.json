@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.10.9019.13046",
-  "ReleaseDate": "10/09/2024",
+  "Version": "0.10.9020.33009",
+  "ReleaseDate": "11/09/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9019.13046-beta/SetupPRS.msi",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9019.13046/SetupPRS.msi",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9020.33009-beta/SetupPRS.msi",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9020.33009/SetupPRS.msi",
   "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
@@ -143,12 +143,13 @@
       ]
     },
     {
-      "Version": "0.10.9019.13046",
-      "ReleaseDate": "10/09/2024",
+      "Version": "0.10.9020.33009",
+      "ReleaseDate": "11/09/2024",
       "Changes": [
         "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
         "Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS",
         "Adicionado verificação de versão de firmware no DirectDrivePRS",
+        "Adicionado log na aplicação DirectDriveReset",
         "Criado novas opções de calibração na aplicação do shaker",
         "Refatorado aquisição do efeito RoadRumble nos plugins",
         "Corrigido BUG de conexão no motion ao reiniciar jogos"
