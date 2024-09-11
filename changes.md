@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.10.9020.33009] 11/09/2024
+## [0.10.9020.33548] 11/09/2024
 
  - Adicionado tela para atualização de firmware na aplicação DirectDrivePRS
  - Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS
