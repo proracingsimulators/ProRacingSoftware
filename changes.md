@@ -1,6 +1,6 @@
 # Pro Racing Software
 
-## [0.10.9029.26006] 20/09/2024
+## [0.10.9034.38444] 25/09/2024
 
  - Adicionado tela para atualização de firmware na aplicação DirectDrivePRS
  - Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS
@@ -13,3 +13,4 @@
  - Implementado plugin LeMansUltimate
  - Implementado efeito Road Impacts
  - Adicionado efeito Road Impacts no plugin Dirt2x0
+ - Adicionado efeito Redução de Força Curva de Alta no Direct Drive
