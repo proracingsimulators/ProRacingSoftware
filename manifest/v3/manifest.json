@@ -1,164 +1,164 @@
-{
-    "Name": "Pro Racing Software",
-    "Version": "0.10.9039.19376",
-    "ReleaseDate": "30/09/2024",
-    "Author": "Pro Racing Simulators",
-    "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-    "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9039.19376-beta/SetupPRS.msi",
-    "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9039.19376/SetupPRS.msi",
-    "Package": null,
-    "ManifestVersion": "v3",
-    "Changelog": [
-      {
-        "Version": "0.1.0.4",
-        "ReleaseDate": "26/06/2023",
-        "Changes": [
-          "Primeiro release do software"
-        ]
-      },
-      {
-        "Version": "0.2.0.5",
-        "ReleaseDate": "26/07/2023",
-        "Changes": [
-          "Adicionado mensagem ao abrir o software, caso já exista uma instancia do software em execução",
-          "Melhorias nas indicações de status do DirectDrivePRS",
-          "Melhorias na conexão do DirectDrivePRS com o ServoDrive",
-          "Adicionado log do software via arquivo (necessário privilégios de administrador)",
-          "Melhorias no arquivo de manifesto"
-        ]
-      },
-      {
-        "Version": "0.3.0.1",
-        "ReleaseDate": "28/08/2023",
-        "Changes": [
-          "Adicionado suporte para placas DIRECT_DRIVE_PRS"
-        ]
-      },
-      {
-        "Version": "0.4.0.3",
-        "ReleaseDate": "15/09/2023",
-        "Changes": [
-          "Adicionado botão de reboot na tela de status do Direct Drive",
-          "Adicionado atalho para resetar direct drive ao iniciar windows"
-        ]
-      },
-      {
-        "Version": "0.5.0.2",
-        "ReleaseDate": "19/09/2023",
-        "Changes": [
-          "Adicionado tela de hardware no DirectDrivePRS",
-          "Informações de hardware do módulo de potência de do módulo USB",
-          "Adicionado comando para calibração do encoder",
-          "Realizado melhorias na comunicação entreo o DirectDrivePRS e o módulo USB"
-        ]
-      },
-      {
-        "Version": "0.6.0.2",
-        "ReleaseDate": "25/09/2023",
-        "Changes": [
-          "Adicionado tela para atualização de firmware no MotionPRS"
-        ]
-      },
-      {
-        "Version": "0.7.0.13",
-        "ReleaseDate": "29/11/2023",
-        "Changes": [
-          "Adicionado módulo para controlar motion via joystick",
-          "Adicionado tela para configurar e salvar macros",
-          "Adicionado plugin PRS UDP",
-          "Atualizado arquivos de firmware do PedalPRS para v2.0.0",
-          "Adicionado plugins F1 2018 e F1 2023",
-          "Reformulado plugin F1 2022",
-          "Adicionado parametros para ajustar taxa de amostragem da visualização do MotionPRS",
-          "Corrigido bug ao remover um efeito na tela de ajustes, o motion realizava um movimento brusco na tela de testes",
-          "Habilitado controle de velocidade na tela de testes",
-          "Adicionado comandos para exportar, importar e enviar arquivo de configuração de hardware para o DirectDrive",
-          "Adicionado comando para resetar o módulo de potência"
-        ]
-      },
-      {
-        "Version": "0.8.0.10",
-        "ReleaseDate": "30/04/2024",
-        "Changes": [
-          "Implementado plugin Dirt Rally 2.0",
-          "Implementado plugin Flight Simulator",
-          "Implementado patch automático Automobilista",
-          "Implementado patch automático rFactor2",
-          "Implementado nova API para os plugins (v2)",
-          "Adicionado suporte para placa HHHH-EFAH no PedalPRS",
-          "Corrigido bug no PedalPRS em que a task de comunicação continuava em execução após o encerramento do software",
-          "Implementado módulo para monitoramento e configuração do freio de mão",
-          "Correções no gerenciamento de memória de alguns módulos",
-          "Corrigido BUG ao clicar em Restart USB no DirectDrivePRS com o dispositivo desconectado",
-          "Adicionado botão 'Opções Avançadas' na tela inicial",
-          "Implementado novo método de conexão no módulo PedalPRS e HBrakePRS",
-          "Implementado plugin iRacing V2 para suporte ao futuro módulo do ShakerPRS"
-        ]
-      },
-      {
-        "Version": "0.9.8999.27061",
-        "ReleaseDate": "21/08/2024",
-        "Changes": [
-          "Modificado esquema de versionamento da aplicação",
-          "Modificado esquema de versionamento dos módulos da aplicação",
-          "Removido patch do Flight Simulator",
-          "Defindo limite mínimo para sensibilidade do batente - DirectDrive",
-          "Adicionado logs de funcionamento no PedalPRS",
-          "Adicionado logs de funcionamento das telas",
-          "Implementado Sistema de vibração - Shaker",
-          "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker",
-          "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
-          "Removido maple_dfu da instalação inicial",
-          "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
-          "Criado instalador alternativo",
-          "Implementado  efeito TractionControlStatus (TC Status)",
-          "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
-        ]
-      },
-      {
-        "Version": "0.10.9005.31365",
-        "ReleaseDate": "27/08/2024",
-        "Changes": [
-          "Criado novas opções de calibração na aplicação do shaker"
-        ]
-      },
-      {
-        "Version": "0.9.9006.12645",
-        "ReleaseDate": "28/08/2024",
-        "Changes": [
-          "Modificado esquema de versionamento da aplicação",
-          "Modificado esquema de versionamento dos módulos da aplicação",
-          "Removido patch do Flight Simulator",
-          "Defindo limite mínimo para sensibilidade do batente - DirectDrive",
-          "Adicionado logs de funcionamento no PedalPRS",
-          "Adicionado logs de funcionamento das telas",
-          "Implementado Sistema de vibração - Shaker",
-          "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker",
-          "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
-          "Removido maple_dfu da instalação inicial",
-          "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
-          "Criado instalador alternativo",
-          "Implementado  efeito TractionControlStatus (TC Status)",
-          "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
-        ]
-      },
-      {
-        "Version": "0.10.9039.19376",
-        "ReleaseDate": "30/09/2024",
-        "Changes": [
-          "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
-          "Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS",
-          "Adicionado verificação de versão de firmware no DirectDrivePRS",
-          "Adicionado log na aplicação DirectDriveReset",
-          "Criado novas opções de calibração na aplicação do shaker",
-          "Refatorado aquisição do efeito RoadRumble nos plugins",
-          "Corrigido BUG de conexão no motion ao reiniciar jogos",
-          "Adicionado efeito Traction Control nos plugins: AssettoCorsa, AssettoCorsaCompetizione e Automobilista2",
-          "Implementado plugin LeMansUltimate",
-          "Implementado efeito Road Impacts",
-          "Adicionado efeito Redução de Força Curva de Alta no Direct Drive",
-          "Adicionado efeito Road Impacts no plugin Dirt2x0, iRacing, e Automobilista 2"
-        ]
-      }
-    ]
-  }
+﻿{
+  "Name": "Pro Racing Software",
+  "Version": "0.10.9041.27642",
+  "ReleaseDate": "02/10/2024",
+  "Author": "Pro Racing Simulators",
+  "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9041.27642-beta/SetupPrsApp.exe",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9041.27642/SetupPrsApp.exe",
+  "Package": null,
+  "ManifestVersion": "v3",
+  "Changelog": [
+    {
+      "Version": "0.1.0.4",
+      "ReleaseDate": "26/06/2023",
+      "Changes": [
+        "Primeiro release do software"
+      ]
+    },
+    {
+      "Version": "0.2.0.5",
+      "ReleaseDate": "26/07/2023",
+      "Changes": [
+        "Adicionado mensagem ao abrir o software, caso já exista uma instancia do software em execução",
+        "Melhorias nas indicações de status do DirectDrivePRS",
+        "Melhorias na conexão do DirectDrivePRS com o ServoDrive",
+        "Adicionado log do software via arquivo (necessário privilégios de administrador)",
+        "Melhorias no arquivo de manifesto"
+      ]
+    },
+    {
+      "Version": "0.3.0.1",
+      "ReleaseDate": "28/08/2023",
+      "Changes": [
+        "Adicionado suporte para placas DIRECT_DRIVE_PRS"
+      ]
+    },
+    {
+      "Version": "0.4.0.3",
+      "ReleaseDate": "15/09/2023",
+      "Changes": [
+        "Adicionado botão de reboot na tela de status do Direct Drive",
+        "Adicionado atalho para resetar direct drive ao iniciar windows"
+      ]
+    },
+    {
+      "Version": "0.5.0.2",
+      "ReleaseDate": "19/09/2023",
+      "Changes": [
+        "Adicionado tela de hardware no DirectDrivePRS",
+        "Informações de hardware do módulo de potência de do módulo USB",
+        "Adicionado comando para calibração do encoder",
+        "Realizado melhorias na comunicação entreo o DirectDrivePRS e o módulo USB"
+      ]
+    },
+    {
+      "Version": "0.6.0.2",
+      "ReleaseDate": "25/09/2023",
+      "Changes": [
+        "Adicionado tela para atualização de firmware no MotionPRS"
+      ]
+    },
+    {
+      "Version": "0.7.0.13",
+      "ReleaseDate": "29/11/2023",
+      "Changes": [
+        "Adicionado módulo para controlar motion via joystick",
+        "Adicionado tela para configurar e salvar macros",
+        "Adicionado plugin PRS UDP",
+        "Atualizado arquivos de firmware do PedalPRS para v2.0.0",
+        "Adicionado plugins F1 2018 e F1 2023",
+        "Reformulado plugin F1 2022",
+        "Adicionado parametros para ajustar taxa de amostragem da visualização do MotionPRS",
+        "Corrigido bug ao remover um efeito na tela de ajustes, o motion realizava um movimento brusco na tela de testes",
+        "Habilitado controle de velocidade na tela de testes",
+        "Adicionado comandos para exportar, importar e enviar arquivo de configuração de hardware para o DirectDrive",
+        "Adicionado comando para resetar o módulo de potência"
+      ]
+    },
+    {
+      "Version": "0.8.0.10",
+      "ReleaseDate": "30/04/2024",
+      "Changes": [
+        "Implementado plugin Dirt Rally 2.0",
+        "Implementado plugin Flight Simulator",
+        "Implementado patch automático Automobilista",
+        "Implementado patch automático rFactor2",
+        "Implementado nova API para os plugins (v2)",
+        "Adicionado suporte para placa HHHH-EFAH no PedalPRS",
+        "Corrigido bug no PedalPRS em que a task de comunicação continuava em execução após o encerramento do software",
+        "Implementado módulo para monitoramento e configuração do freio de mão",
+        "Correções no gerenciamento de memória de alguns módulos",
+        "Corrigido BUG ao clicar em Restart USB no DirectDrivePRS com o dispositivo desconectado",
+        "Adicionado botão 'Opções Avançadas' na tela inicial",
+        "Implementado novo método de conexão no módulo PedalPRS e HBrakePRS",
+        "Implementado plugin iRacing V2 para suporte ao futuro módulo do ShakerPRS"
+      ]
+    },
+    {
+      "Version": "0.9.8999.27061",
+      "ReleaseDate": "21/08/2024",
+      "Changes": [
+        "Modificado esquema de versionamento da aplicação",
+        "Modificado esquema de versionamento dos módulos da aplicação",
+        "Removido patch do Flight Simulator",
+        "Defindo limite mínimo para sensibilidade do batente - DirectDrive",
+        "Adicionado logs de funcionamento no PedalPRS",
+        "Adicionado logs de funcionamento das telas",
+        "Implementado Sistema de vibração - Shaker",
+        "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker",
+        "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
+        "Removido maple_dfu da instalação inicial",
+        "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
+        "Criado instalador alternativo",
+        "Implementado  efeito TractionControlStatus (TC Status)",
+        "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
+      ]
+    },
+    {
+      "Version": "0.10.9005.31365",
+      "ReleaseDate": "27/08/2024",
+      "Changes": [
+        "Criado novas opções de calibração na aplicação do shaker"
+      ]
+    },
+    {
+      "Version": "0.9.9006.12645",
+      "ReleaseDate": "28/08/2024",
+      "Changes": [
+        "Modificado esquema de versionamento da aplicação",
+        "Modificado esquema de versionamento dos módulos da aplicação",
+        "Removido patch do Flight Simulator",
+        "Defindo limite mínimo para sensibilidade do batente - DirectDrive",
+        "Adicionado logs de funcionamento no PedalPRS",
+        "Adicionado logs de funcionamento das telas",
+        "Implementado Sistema de vibração - Shaker",
+        "Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker",
+        "Modificado motion para que o dispositivo seja inicializado na tela principal do PRS",
+        "Removido maple_dfu da instalação inicial",
+        "Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS",
+        "Criado instalador alternativo",
+        "Implementado  efeito TractionControlStatus (TC Status)",
+        "Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker"
+      ]
+    },
+    {
+      "Version": "0.10.9041.27642",
+      "ReleaseDate": "02/10/2024",
+      "Changes": [
+        "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
+        "Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS",
+        "Adicionado verificação de versão de firmware no DirectDrivePRS",
+        "Adicionado log na aplicação DirectDriveReset",
+        "Criado novas opções de calibração na aplicação do shaker",
+        "Refatorado aquisição do efeito RoadRumble nos plugins",
+        "Corrigido BUG de conexão no motion ao reiniciar jogos",
+        "Adicionado efeito Traction Control nos plugins: AssettoCorsa, AssettoCorsaCompetizione e Automobilista2",
+        "Implementado plugin LeMansUltimate",
+        "Implementado efeito Road Impacts",
+        "Adicionado efeito Road Impacts no plugin Dirt2x0",
+        "Incrementado versão do arquivo de manifesto do repositório de release"
+      ]
+    }
+  ]
+}
