@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.10.9041.28349",
-  "ReleaseDate": "02/10/2024",
+  "Version": "0.10.9043.29949",
+  "ReleaseDate": "04/10/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9041.28349-beta/SetupPrsApp.exe",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9041.28349/SetupPrsApp.exe",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9043.29949-beta/SetupPrsApp.exe",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9043.29949/SetupPrsApp.exe",
   "Package": null,
   "ManifestVersion": "v3",
   "Changelog": [
@@ -143,8 +143,8 @@
       ]
     },
     {
-      "Version": "0.10.9041.28349",
-      "ReleaseDate": "02/10/2024",
+      "Version": "0.10.9043.29949",
+      "ReleaseDate": "04/10/2024",
       "Changes": [
         "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
         "Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS",
@@ -158,7 +158,8 @@
         "Implementado efeito Road Impacts",
         "Adicionado efeito Redução de Força Curva de Alta no Direct Drive",
         "Adicionado efeito Road Impacts no plugin Dirt2x0, iRacing, e Automobilista 2",
-        "Incrementado versão do arquivo de manifesto do repositório de release"
+        "Incrementado versão do arquivo de manifesto do repositório de release",
+        "Ajustado timeout do direct drive para 100ms"
       ]
     }
   ]
