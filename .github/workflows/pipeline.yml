@@ -47,7 +47,7 @@ jobs:
         WITH_V: true
         PRERELEASE: ${{ env.RELEASE_PRE }}
         PRERELEASE_SUFFIX: ${{ env.RELEASE_SUFFIX }}
-        CUSTOM_TAG: v0.10.9053.22393${{ env.RELEASE_SUFFIX }}
+        CUSTOM_TAG: v0.10.9057.24497${{ env.RELEASE_SUFFIX }}
     - name: Create release
       if: ${{ github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/release' || github.ref == 'refs/heads/main' }}
       uses: softprops/action-gh-release@v1
