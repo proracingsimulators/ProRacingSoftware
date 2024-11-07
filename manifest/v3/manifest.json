@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.10.9077.23329",
+  "Version": "0.10.9077.32479",
   "ReleaseDate": "07/11/2024",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9077.23329-beta/SetupPrsApp.exe",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9077.23329/SetupPrsApp.exe",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9077.32479-beta/SetupPrsApp.exe",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9077.32479/SetupPrsApp.exe",
   "Package": null,
   "ManifestVersion": "v3",
   "Changelog": [
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "Version": "0.10.9077.23329",
+      "Version": "0.10.9077.32479",
       "ReleaseDate": "07/11/2024",
       "Changes": [
         "Adicionado tela para atualização de firmware na aplicação DirectDrivePRS",
