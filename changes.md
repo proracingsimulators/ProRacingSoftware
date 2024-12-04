@@ -1,18 +1,20 @@
 # Pro Racing Software
 
-## [0.9.8998.21447] 20/08/2024
+## [0.10.9090.28283] 20/11/2024
 
- - Modificado esquema de versionamento da aplicação
- - Modificado esquema de versionamento dos módulos da aplicação
- - Removido patch do Flight Simulator
- - Defindo limite mínimo para sensibilidade do batente - DirectDrive
- - Adicionado logs de funcionamento no PedalPRS
- - Adicionado logs de funcionamento das telas
- - Implementado Sistema de vibração - Shaker
- - Modificado plugins Assetto Corsa, Assetto Corsa Competizione, Automobilista2, F1 2018, F1 2022, F1 2023 e IRacing para compatibilidade com Shaker
- - Modificado motion para que o dispositivo seja inicializado na tela principal do PRS
- - Removido maple_dfu da instalação inicial
- - Adicionado donwload do maple_dfu durante instalação dos drivers de atualização de firmware do Motion e do PedalPRS
- - Criado instalador alternativo
- - Implementado  efeito TractionControlStatus (TC Status)
- - Modificado plugins Automobilista, rFactor, DirtRally 2.0 e Flight Simulator para compatibilidade com Shaker
+ - Adicionado tela para atualização de firmware na aplicação DirectDrivePRS
+ - Adicionado efeitos Desktop Inércia e Desktop Fricção no DirecrDrivePRS
+ - Adicionado verificação de versão de firmware no DirectDrivePRS
+ - Adicionado log na aplicação DirectDriveReset
+ - Criado novas opções de calibração na aplicação do shaker
+ - Refatorado aquisição do efeito RoadRumble nos plugins
+ - Corrigido BUG de conexão no motion ao reiniciar jogos
+ - Adicionado efeito Traction Control nos plugins: AssettoCorsa, AssettoCorsaCompetizione e Automobilista2
+ - Implementado plugin LeMansUltimate e F1x2024
+ - Implementado efeito Road Impacts
+ - Adicionado efeito Redução de Força Curva de Alta no Direct Drive
+ - Adicionado efeito Road Impacts no plugin Dirt2x0, iRacing, e Automobilista 2
+ - Incrementado versão do arquivo de manifesto do repositório de release
+ - Ajustado timeout do direct drive para 100ms
+ - Adicionado efeito Road Impacts nos plugins AssettoCorsa, AssettoCorsaCompetizione, Automobilista, F1x2018, F1x2022, F1x2023, LeMansUltimate e RFactor2
+ - Adicionado mensagem de aviso ao detectar mudança na conexão USB do shaker
