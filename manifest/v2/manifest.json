@@ -1,11 +1,11 @@
 ﻿{
   "Name": "Pro Racing Software",
-  "Version": "0.10.9090.28283",
-  "ReleaseDate": "20/11/2024",
+  "Version": "0.11.9141.28407",
+  "ReleaseDate": "10/01/2025",
   "Author": "Pro Racing Simulators",
   "Description": "Software para ajustes, configurações e diagnóstico de periféricos e dispositivos nas plataformas de simulação da Pro Racing Simulators.",
-  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9090.28283-beta/SetupPrsApp.exe",
-  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.10.9090.28283/SetupPrsApp.exe",
+  "Beta": "https://github.com/proracingsimulators/prs_release/releases/download/v0.11.9141.28407-beta/SetupPrsApp.exe",
+  "Stable": "https://github.com/proracingsimulators/prs_release/releases/download/v0.11.9141.28407/SetupPrsApp.exe",
   "Package": null,
   "ManifestVersion": "v2",
   "Changelog": [
@@ -135,6 +135,13 @@
         "Ajustado timeout do direct drive para 100ms",
         "Adicionado efeito Road Impacts nos plugins AssettoCorsa, AssettoCorsaCompetizione, Automobilista, F1x2018, F1x2022, F1x2023, LeMansUltimate e RFactor2",
         "Adicionado mensagem de aviso ao detectar mudança na conexão USB do shaker"
+      ]
+    },
+    {
+      "Version": "0.11.9141.28407",
+      "ReleaseDate": "10/01/2025",
+      "Changes": [
+        "Adicionado tela para monitoramento do câmbio de marcha"
       ]
     }
   ]
